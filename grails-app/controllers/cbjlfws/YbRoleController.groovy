@@ -14,7 +14,7 @@ class YbRoleController {
         params.max = Math.min(max ?: 10, 100)
         [ybRoleInstanceList: YbRole.list(params), ybRoleInstanceTotal: YbRole.count()]
     }
-
+//方法需要复制
     def create() {
         [ybRoleInstance: new YbRole(params)]
     }

@@ -202,13 +202,102 @@ class YbLoginController {
 
 
 
+//王钧民
+    def ybRoleList(Integer max){
+        params.max = Math.min(max ?: 10, 100)
+        def list = side()
+        [ybRoleInstanceList: YbRole.list(params), ybRoleInstanceTotal: YbRole.count(),list: list]
+    }
+//新建用户完成后
+    def ybRoleCreate(){
+        def list = side()
+        [ybRoleInstance: new YbRole(params),list: list]
+    }
+//save
+    def ybRoleSave() {
+        def ybRoleInstance = new YbRole(params)
+        if (!ybRoleInstance.save(flush: true)) {
+            render(view: "ybRoleSave", model: [ybRoleInstance: ybRoleInstance])
+            return
+        }
 
+        flash.message = message(code: 'default.created.message', args: [message(code: 'ybRole.label', default: 'YbRole'), ybRoleInstance.id])
+        redirect(action: "ybRoleList", id: ybRoleInstance.id)
+    }
 
+//show
+    def ybRoleshow(Long id) {
+        def list = side()
+        def ybRoleInstance = YbRole.get(id)
+        if (!ybRoleInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+            redirect(action: "list")
+            return
+        }
 
+        [ybRoleInstance: ybRoleInstance,list: list]
+    }
+//del
+    def ybRoaldelete(Long id) {
+        def ybRoleInstance = YbRole.get(id)
+        if (!ybRoleInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+            redirect(action: "ybRoleList")
+            return
+        }
 
+        try {
+            ybRoleInstance.delete(flush: true)
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+            redirect(action: "ybRoleList")
+        }
+        catch (DataIntegrityViolationException e) {
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+            redirect(action: "ybRoleshow", id: id)
+        }
+    }
 
+//edit
+    def ybRoaledit(Long id) {
+        def list = side()
+        def ybRoleInstance = YbRole.get(id)
+        if (!ybRoleInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+            redirect(action: "list")
+            return
+        }
 
+        [ybRoleInstance: ybRoleInstance,list: list]
+    }
+//update
+    def ybRoleUpdate(Long id, Long version) {
+        def ybRoleInstance = YbRole.get(id)
+        if (!ybRoleInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+            redirect(action: "ybRoleList")
+            return
+        }
 
+        if (version != null) {
+            if (ybRoleInstance.version > version) {
+                ybRoleInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                        [message(code: 'ybRole.label', default: 'YbRole')] as Object[],
+                        "Another user has updated this YbRole while you were editing")
+                render(view: "ybRoaledit", model: [ybRoleInstance: ybRoleInstance])
+                return
+            }
+        }
+
+        ybRoleInstance.properties = params
+
+        if (!ybRoleInstance.save(flush: true)) {
+            render(view: "ybRoaledit", model: [ybRoleInstance: ybRoleInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'ybRole.label', default: 'YbRole'), ybRoleInstance.id])
+        redirect(action: "ybRoleshow", id: ybRoleInstance.id)
+    }
 
 
 
