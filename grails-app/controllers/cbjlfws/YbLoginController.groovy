@@ -196,9 +196,93 @@ class YbLoginController {
             redirect(action: "show", id: id)
         }
     }
+    def ybClientList(Integer max){
+        params.max = Math.min(max ?: 10, 100)
+        def list = side()
+        [ybClientInstanceList: YbClient.list(params), ybClientInstanceTotal: YbClient.count(),list: list]
+    }
+    def ybClientCreate(){
+        def list = side()
+        [ybClientInstance: new YbClient(params),list: list]
+    }
+    def ybClientSave() {
+        def ybClientInstance = new YbClient(params)
+        if (!ybClientInstance.save(flush: true)) {
+            render(view: "ybClientCreate", model: [ybClientInstance: ybClientInstance])
+            return
+        }
 
+        flash.message = message(code: 'default.created.message', args: [message(code: 'ybClient.label', default: 'YbClient'), ybClientInstance.id])
+        redirect(action: "ybClientList", id: ybClientInstance.id)
+    }
+    def ybClientShow(Long id) {
+        def list = side()
+        def ybClientInstance = YbClient.get(id)
+        if (!ybClientInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+            redirect(action: "ybClientList")
+            return
+        }
 
+        [ybClientInstance: ybClientInstance,list: list]
+    }
+    def ybClientDelete(Long id) {
+        def ybClientInstance = YbClient.get(id)
+        if (!ybClientInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+            redirect(action: "ybClientList")
+            return
+        }
 
+        try {
+            ybClientInstance.delete(flush: true)
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+            redirect(action: "ybClientList")
+        }
+        catch (DataIntegrityViolationException e) {
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+            redirect(action: "ybClientShow", id: id)
+        }
+    }
+    def ybClientEdit(Long id) {
+        def list = side()
+        def ybClientInstance = YbClient.get(id)
+        if (!ybClientInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+            redirect(action: "list")
+            return
+        }
+
+        [ybClientInstance: ybClientInstance,list: list]
+    }
+    def ybClientUpdate(Long id, Long version) {
+        def ybClientInstance = YbClient.get(id)
+        if (!ybClientInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+            redirect(action: "ybClientList")
+            return
+        }
+
+        if (version != null) {
+            if (ybClientInstance.version > version) {
+                ybClientInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                        [message(code: 'ybClient.label', default: 'YbClient')] as Object[],
+                        "Another user has updated this YbClient while you were editing")
+                render(view: "edit", model: [ybClientInstance: ybClientInstance])
+                return
+            }
+        }
+
+        ybClientInstance.properties = params
+
+        if (!ybClientInstance.save(flush: true)) {
+            render(view: "ybClientEdit", model: [ybClientInstance: ybClientInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'ybClient.label', default: 'YbClient'), ybClientInstance.id])
+        redirect(action: "ybClientShow", id: ybClientInstance.id)
+    }
 
 
 
