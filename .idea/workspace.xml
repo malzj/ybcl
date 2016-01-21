@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d651d48-1623-48ea-b2d2-a1d3bc813c1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengCreate.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengEdit.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengShow.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YBHT-grailsPlugins.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/YBHT.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybClientCreate.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybClientEdit.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybClientList.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybClientShow.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybRoaledit.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybRoleCreate.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybRoleList.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybRoleshow.gsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbRoleController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbRoleController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengList.gsp" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengList.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ybcl.iml" afterPath="$PROJECT_DIR$/ybcl.iml" />
     </list>
     <ignored path="ybcl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,19 +86,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="YbLoginController.groovy" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YbLoginController.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7928994">
+              <caret line="188" column="5" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
               <folding>
                 <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybClientList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybClientCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybClientShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
@@ -95,16 +113,26 @@
                 <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybClientEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybClientUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybRoleUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ybGongNengEdit.gsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ybGongNengEdit.gsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengEdit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1711712">
-              <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+            <state vertical-scroll-proportion="-6.06383">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -155,7 +183,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="160" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="160" selection-end-column="7" />
-              <folding />
+              <folding>
+                <marker date="1453354719000" expanded="true" signature="2385:3465" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,10 +248,10 @@
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybFuncList.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengInstanceList.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengCreate.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengShow.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengList.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengEdit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" />
       </list>
     </option>
   </component>
@@ -550,22 +580,14 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="Grails:ybcl" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
-      <module name="ybcl" />
+    <configuration default="false" name="Grails:ybcl" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="YBHT" />
       <setting name="vmparams" value="" />
       <setting name="cmdLine" value="run-app" />
       <setting name="depsClasspath" value="false" />
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
-      <RunnerSettings RunnerId="GrailsMavenDebuggerRunner">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="GrailsMavenDebuggerRunner" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <list size="1">
@@ -590,12 +612,12 @@
       <workItem from="1453346623774" duration="1500000" />
       <workItem from="1453348746160" duration="2675000" />
       <workItem from="1453354851795" duration="6904000" />
-      <workItem from="1453364026088" duration="361000" />
+      <workItem from="1453364026088" duration="1118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19206000" />
+    <option name="totallyTimeSpent" value="19963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="27" width="1400" height="833" extended-state="0" />
@@ -612,8 +634,10 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4385965" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916054" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -622,16 +646,14 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20512821" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20512821" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43876177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -701,10 +723,17 @@
             <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
@@ -712,6 +741,16 @@
             <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -760,7 +799,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="160" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="160" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1453354719000" expanded="true" signature="2385:3465" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -802,10 +843,17 @@
             <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
@@ -813,6 +861,16 @@
             <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -835,7 +893,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1453354719000" expanded="true" signature="2385:3465" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -847,10 +907,17 @@
             <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
@@ -858,6 +925,16 @@
             <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,7 +960,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="75" column="62" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1453354719000" expanded="true" signature="2385:3465" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -895,10 +974,17 @@
             <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
@@ -906,6 +992,16 @@
             <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -931,7 +1027,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="47" column="73" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1453354719000" expanded="true" signature="2385:3465" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -939,6 +1037,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1093,34 +1192,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserList.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="160" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="160" selection-end-column="7" />
-          <folding />
+          <folding>
+            <marker date="1453354719000" expanded="true" signature="2385:3465" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,9 +1212,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengEdit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1711712">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        <state vertical-scroll-proportion="-6.06383">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7928994">
+          <caret line="188" column="5" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1144,7 +1262,7 @@
   <component name="grailsSettings">
     <option name="map">
       <map>
-        <entry key="ybcl">
+        <entry key="YBHT">
           <value>
             <GrailsSettings>
               <option name="buildConfigCrc" value="1442187093" />
@@ -1162,7 +1280,7 @@
             </GrailsSettings>
           </value>
         </entry>
-        <entry key="ybcl-grailsPlugins">
+        <entry key="YBHT-grailsPlugins">
           <value>
             <GrailsSettings />
           </value>

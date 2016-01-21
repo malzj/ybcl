@@ -7,82 +7,89 @@ class YbLoginController {
     def index() {
 
     }
-    def login(){
+
+    def login() {
         def username = params.username
         def password = params.password
-        def ybUser = YbUser.findByUsernameAndPassword(username,password)
-        if (ybUser){
-            session.user=ybUser
-            redirect(action:"ybindex")
-        }else (
-                redirect(action: "index",msg:"您输入账号有误")
+        def ybUser = YbUser.findByUsernameAndPassword(username, password)
+        if (ybUser) {
+            session.user = ybUser
+            redirect(action: "ybindex")
+        } else (
+                redirect(action: "index", msg: "您输入账号有误")
         )
     }
-    def side(){
+
+    def side() {
         def user = session.user
         def gongnenglist = YbRole.findAllByYbUserId(user.id)
         def size = gongnenglist.size()
         print(size)
-        def i=0
-        def list=[]
-        for (i;i<size;i++){
-            def  s =gongnenglist.get(i)
+        def i = 0
+        def list = []
+        for (i; i < size; i++) {
+            def s = gongnenglist.get(i)
             def gongnengId = s.ybGongNengId
             def g = YbGongNeng.findById(gongnengId)
             print(s)
-            list<<g
+            list << g
         }
 
-        return  list
+        return list
     }
-    def ybindex(){
+
+    def ybindex() {
         def user = session.user
         def gongnenglist = YbRole.findAllByYbUserId(user.id)
         def size = gongnenglist.size()
         print(size)
-        def i=0
-        def list=[]
-        for (i;i<size;i++){
-            def  s =gongnenglist.get(i)
+        def i = 0
+        def list = []
+        for (i; i < size; i++) {
+            def s = gongnenglist.get(i)
             def gongnengId = s.ybGongNengId
             def g = YbGongNeng.findById(gongnengId)
             print(s)
-            list<<g
+            list << g
         }
 
         [list: list]
     }
-    def ybUserList(Integer max){
+
+    def ybUserList(Integer max) {
         params.max = Math.min(max ?: 10, 100)
         def list = side()
-        [ybUserInstanceList: YbUser.list(params), ybUserInstanceTotal: YbUser.count(),list: list]
+        [ybUserInstanceList: YbUser.list(params), ybUserInstanceTotal: YbUser.count(), list: list]
     }
+
     def ybUserCreate() {
         def list = side()
         def gongnenglist = YbGongNeng.list()
-        [ybUserInstance: new YbUser(params),list: list,gongnenglist:gongnenglist]
+        [ybUserInstance: new YbUser(params), list: list, gongnenglist: gongnenglist]
     }
-    def ybUserSave(){
+
+    def ybUserSave() {
         def ybUserInstance = new YbUser(params)
         def gongnenglist = params.gongneng
-        def i=0
+        def i = 0
         if (!ybUserInstance.save(flush: true)) {
             render(view: "create", model: [ybUserInstance: ybUserInstance])
             return
         }
-        for (i;i<gongnenglist.size();i++){
-           def userId = ybUserInstance.id
-           def gongnengId = gongnenglist[i]
-           def ybRole = new YbRole()
-           ybRole.time = new Date()
-           ybRole.YbGongNengId = gongnengId
-           ybRole.YbUserId = userId
+        for (i; i < gongnenglist.size(); i++) {
+            def userId = ybUserInstance.id
+            def gongnengId = gongnenglist[i]
+            def ybRole = new YbRole()
+            ybRole.time = new Date()
+            ybRole.YbGongNengId = gongnengId
+            ybRole.YbUserId = userId
             ybRole.save()
         }
 
         flash.message = message(code: 'default.created.message', args: [message(code: 'ybUser.label', default: 'YbUser'), ybUserInstance.id])
         redirect(action: "ybUserList", id: ybUserInstance.id)
     }
+
     def ybUsershow(Long id) {
         def list = side()
         def ybUserInstance = YbUser.get(id)
@@ -94,18 +101,19 @@ class YbLoginController {
         def gongnenglist = YbRole.findAllByYbUserId(id)
         def size = gongnenglist.size()
 
-        def i=0
-        def listgongneng=[]
-        for (i;i<size;i++){
-            def  s =gongnenglist.get(i)
+        def i = 0
+        def listgongneng = []
+        for (i; i < size; i++) {
+            def s = gongnenglist.get(i)
             def gongnengId = s.ybGongNengId
             def g = YbGongNeng.findById(gongnengId)
             print(s)
-            listgongneng<<g
+            listgongneng << g
         }
 
-        [ybUserInstance: ybUserInstance,list: list,listgongneng:listgongneng]
+        [ybUserInstance: ybUserInstance, list: list, listgongneng: listgongneng]
     }
+
     def ybUserEdit(Long id) {
         def list = side()
 
@@ -118,20 +126,21 @@ class YbLoginController {
         def gongnenglist = YbRole.findAllByYbUserId(id)
         def size = gongnenglist.size()
 
-        def i=0
-        def listgongneng=[]
-        for (i;i<size;i++){
-            def  s =gongnenglist.get(i)
+        def i = 0
+        def listgongneng = []
+        for (i; i < size; i++) {
+            def s = gongnenglist.get(i)
             def gongnengId = s.ybGongNengId
             def g = YbGongNeng.findById(gongnengId)
             print(s)
-            listgongneng<<g
+            listgongneng << g
         }
         def gongnenglistrole = YbGongNeng.list()
 
 
-        [ybUserInstance: ybUserInstance,list:list,listgongneng:listgongneng,gongnenglistrole:gongnenglistrole]
+        [ybUserInstance: ybUserInstance, list: list, listgongneng: listgongneng, gongnenglistrole: gongnenglistrole]
     }
+
     def ybUserUpdate(Long id, Long version) {
         def ybUserInstance = YbUser.get(id)
         if (!ybUserInstance) {
@@ -158,14 +167,14 @@ class YbLoginController {
         }
         def gongnenglist = params.gongneng
         def role = YbRole.findAllByYbUserId(id)
-        def x=0
-        for (x;x<role.size();x++){
+        def x = 0
+        for (x; x < role.size(); x++) {
             def roleId = role.get(x).id
-              def roleuser =  YbRole.get(roleId)
+            def roleuser = YbRole.get(roleId)
             roleuser.delete()
         }
-        def i=0
-        for (i;i<gongnenglist.size();i++){
+        def i = 0
+        for (i; i < gongnenglist.size(); i++) {
             def userId = ybUserInstance.id
             def gongnengId = gongnenglist[i]
             def ybRole = new YbRole()
@@ -178,6 +187,7 @@ class YbLoginController {
         flash.message = message(code: 'default.updated.message', args: [message(code: 'ybUser.label', default: 'YbUser'), ybUserInstance.id])
         redirect(action: "ybUsershow", id: ybUserInstance.id)
     }
+
     def ybUserdelete(Long id) {
         def ybUserInstance = YbUser.get(id)
         if (!ybUserInstance) {
@@ -197,117 +207,291 @@ class YbLoginController {
         }
     }
 
-
-    //金成柱
-    //功能列表
-    def ybGongNengList(Integer max){
-        params.max = Math.min(max ?: 10, 100)   //分页作用
+    def ybClientList(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
         def list = side()
-        [ybGongNengInstanceList: YbGongNeng.list(params), ybGongNengInstanceTotal: YbGongNeng.count(), list:list]
+        [ybClientInstanceList: YbClient.list(params), ybClientInstanceTotal: YbClient.count(), list: list]
     }
 
-    def ybGongNengCreate(){
+    def ybClientCreate() {
         def list = side()
-        [ybGongNengInstance: new YbGongNeng(params), list: list]
+        [ybClientInstance: new YbClient(params), list: list]
     }
 
-    def ybGongNengSave() {
-        def ybGongNengInstance = new YbGongNeng(params)
-        if (!ybGongNengInstance.save(flush: true)) {
-            render(view: "ybGongNengCreate", model: [ybGongNengInstance: ybGongNengInstance])
+    def ybClientSave() {
+        def ybClientInstance = new YbClient(params)
+        if (!ybClientInstance.save(flush: true)) {
+            render(view: "ybClientCreate", model: [ybClientInstance: ybClientInstance])
             return
         }
 
-        flash.message = message(code: 'default.created.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), ybGongNengInstance.id])
-        redirect(action: "ybGongNengList", id: ybGongNengInstance.id)
+        flash.message = message(code: 'default.created.message', args: [message(code: 'ybClient.label', default: 'YbClient'), ybClientInstance.id])
+        redirect(action: "ybClientList", id: ybClientInstance.id)
     }
 
-    def ybGongNengShow(Long id) {
+    def ybClientShow(Long id) {
         def list = side()
-        def ybGongNengInstance = YbGongNeng.get(id)
-        if (!ybGongNengInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
-            redirect(action: "list")
+        def ybClientInstance = YbClient.get(id)
+        if (!ybClientInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+            redirect(action: "ybClientList")
             return
-        }
-
-        [ybGongNengInstance: ybGongNengInstance, list: list]
-    }
-
-    def ybGongNengDelete(Long id) {
-//        def list = side()
-        def ybGongNengInstance = YbGongNeng.get(id)
-        if (!ybGongNengInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
-            redirect(action: "ybGongNengList")
-            return
-        }
-
-        try {
-            ybGongNengInstance.delete(flush: true)
-            flash.message = message(code: 'default.deleted.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
-            redirect(action: "ybGongNengList")
-        }
-        catch (DataIntegrityViolationException e) {
-            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
-            redirect(action: "ybGongNengShow", id: id)
         }
     }
-
-    def ybGongNengEdit(Long id) {
-        def list = side()
-        def ybGongNengInstance = YbGongNeng.get(id)
-        if (!ybGongNengInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
-            redirect(action: "list")
-            return
+        //金成柱
+        //功能列表
+        def ybGongNengList(Integer max) {
+            params.max = Math.min(max ?: 10, 100)   //分页作用
+            def list = side()
+            [ybGongNengInstanceList: YbGongNeng.list(params), ybGongNengInstanceTotal: YbGongNeng.count(), list: list]
         }
 
-        [ybGongNengInstance: ybGongNengInstance, list: list]
-    }
-
-    def ybGongNengUpdate(Long id, Long version) {
-        def ybGongNengInstance = YbGongNeng.get(id)
-        if (!ybGongNengInstance) {
-            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
-            redirect(action: "ybGongNengList")
-            return
+        def ybGongNengCreate() {
+            def list = side()
+            [ybGongNengInstance: new YbGongNeng(params), list: list]
         }
 
-        if (version != null) {
-            if (ybGongNengInstance.version > version) {
-                ybGongNengInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
-                        [message(code: 'ybGongNeng.label', default: 'YbGongNeng')] as Object[],
-                        "Another user has updated this YbGongNeng while you were editing")
-                render(view: "ybGongNengEdit", model: [ybGongNengInstance: ybGongNengInstance])
+        def ybGongNengSave() {
+            def ybGongNengInstance = new YbGongNeng(params)
+            if (!ybGongNengInstance.save(flush: true)) {
+                render(view: "ybGongNengCreate", model: [ybGongNengInstance: ybGongNengInstance])
                 return
+            }
+
+            flash.message = message(code: 'default.created.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), ybGongNengInstance.id])
+            redirect(action: "ybGongNengList", id: ybGongNengInstance.id)
+        }
+
+        def ybGongNengShow(Long id) {
+            def list = side()
+            def ybGongNengInstance = YbGongNeng.get(id)
+            if (!ybGongNengInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+                redirect(action: "list")
+                return
+            }
+
+            [ybGongNengInstance: ybGongNengInstance, list: list]
+        }
+
+        def ybGongNengDelete(Long id) {
+
+            def ybGongNengInstance = YbGongNeng.get(id)
+            if (!ybGongNengInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+                redirect(action: "ybGongNengList")
+                return
+            }
+
+            try {
+                ybGongNengInstance.delete(flush: true)
+                flash.message = message(code: 'default.deleted.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+                redirect(action: "ybGongNengList")
+            }
+            catch (DataIntegrityViolationException e) {
+                flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+                redirect(action: "ybGongNengShow", id: id)
             }
         }
 
-        ybGongNengInstance.properties = params
+        def ybGongNengEdit(Long id) {
+            def list = side()
+            def ybGongNengInstance = YbGongNeng.get(id)
+            if (!ybGongNengInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+                redirect(action: "list")
+                return
+            }
 
-        if (!ybGongNengInstance.save(flush: true)) {
-            render(view: "ybGongNengEdit", model: [ybGongNengInstance: ybGongNengInstance])
-            return
+            [ybGongNengInstance: ybGongNengInstance, list: list]
         }
 
-        flash.message = message(code: 'default.updated.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), ybGongNengInstance.id])
-        redirect(action: "ybGongNengShow", id: ybGongNengInstance.id)
-    }
+        def ybGongNengUpdate(Long id, Long version) {
+            def ybGongNengInstance = YbGongNeng.get(id)
+            if (!ybGongNengInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+                redirect(action: "ybGongNengList")
+                return
+            }
+
+            if (version != null) {
+                if (ybGongNengInstance.version > version) {
+                    ybGongNengInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                            [message(code: 'ybGongNeng.label', default: 'YbGongNeng')] as Object[],
+                            "Another user has updated this YbGongNeng while you were editing")
+                    render(view: "ybGongNengEdit", model: [ybGongNengInstance: ybGongNengInstance])
+                    return
+                }
+            }
+
+            ybGongNengInstance.properties = params
+
+            if (!ybGongNengInstance.save(flush: true)) {
+                render(view: "ybGongNengEdit", model: [ybGongNengInstance: ybGongNengInstance])
+                return
+            }
+
+            flash.message = message(code: 'default.updated.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), ybGongNengInstance.id])
+            redirect(action: "ybGongNengShow", id: ybGongNengInstance.id)
+        }
 
 
 
+        def ybClientDelete(Long id) {
+            def ybClientInstance = YbClient.get(id)
+            if (!ybClientInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+                redirect(action: "ybClientList")
+                return
+            }
 
 
+            try {
+                ybClientInstance.delete(flush: true)
+                flash.message = message(code: 'default.deleted.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+                redirect(action: "ybClientList")
+            }
+            catch (DataIntegrityViolationException e) {
+                flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+                redirect(action: "ybClientShow", id: id)
+            }
+        }
+        def ybClientEdit(Long id) {
+            def list = side()
+            def ybClientInstance = YbClient.get(id)
+            if (!ybClientInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+                redirect(action: "list")
+                return
+            }
 
+            [ybClientInstance: ybClientInstance, list: list]
+        }
+        def ybClientUpdate(Long id, Long version) {
+            def ybClientInstance = YbClient.get(id)
+            if (!ybClientInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybClient.label', default: 'YbClient'), id])
+                redirect(action: "ybClientList")
+                return
+            }
 
+            if (version != null) {
+                if (ybClientInstance.version > version) {
+                    ybClientInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                            [message(code: 'ybClient.label', default: 'YbClient')] as Object[],
+                            "Another user has updated this YbClient while you were editing")
+                    render(view: "edit", model: [ybClientInstance: ybClientInstance])
+                    return
+                }
+            }
 
+            ybClientInstance.properties = params
 
+            if (!ybClientInstance.save(flush: true)) {
+                render(view: "ybClientEdit", model: [ybClientInstance: ybClientInstance])
+                return
+            }
 
+            flash.message = message(code: 'default.updated.message', args: [message(code: 'ybClient.label', default: 'YbClient'), ybClientInstance.id])
+            redirect(action: "ybClientShow", id: ybClientInstance.id)
+        }
 
+//王钧民
+        def ybRoleList(Integer max) {
+            params.max = Math.min(max ?: 10, 100)
+            def list = side()
+            [ybRoleInstanceList: YbRole.list(params), ybRoleInstanceTotal: YbRole.count(), list: list]
+        }
+//新建用户完成后
+        def ybRoleCreate() {
+            def list = side()
+            [ybRoleInstance: new YbRole(params), list: list]
+        }
+//save
+        def ybRoleSave() {
+            def ybRoleInstance = new YbRole(params)
+            if (!ybRoleInstance.save(flush: true)) {
+                render(view: "ybRoleSave", model: [ybRoleInstance: ybRoleInstance])
+                return
+            }
 
+            flash.message = message(code: 'default.created.message', args: [message(code: 'ybRole.label', default: 'YbRole'), ybRoleInstance.id])
+            redirect(action: "ybRoleList", id: ybRoleInstance.id)
+        }
 
+//show
+        def ybRoleshow(Long id) {
+            def list = side()
+            def ybRoleInstance = YbRole.get(id)
+            if (!ybRoleInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+                redirect(action: "list")
+                return
+            }
 
+            [ybRoleInstance: ybRoleInstance, list: list]
+        }
+//del
+        def ybRoaldelete(Long id) {
+            def ybRoleInstance = YbRole.get(id)
+            if (!ybRoleInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+                redirect(action: "ybRoleList")
+                return
+            }
+
+            try {
+                ybRoleInstance.delete(flush: true)
+                flash.message = message(code: 'default.deleted.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+                redirect(action: "ybRoleList")
+            }
+            catch (DataIntegrityViolationException e) {
+                flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+                redirect(action: "ybRoleshow", id: id)
+            }
+        }
+
+//edit
+        def ybRoaledit(Long id) {
+            def list = side()
+            def ybRoleInstance = YbRole.get(id)
+            if (!ybRoleInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+                redirect(action: "list")
+                return
+            }
+
+            [ybRoleInstance: ybRoleInstance, list: list]
+        }
+//update
+        def ybRoleUpdate(Long id, Long version) {
+            def ybRoleInstance = YbRole.get(id)
+            if (!ybRoleInstance) {
+                flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybRole.label', default: 'YbRole'), id])
+                redirect(action: "ybRoleList")
+                return
+            }
+
+            if (version != null) {
+                if (ybRoleInstance.version > version) {
+                    ybRoleInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                            [message(code: 'ybRole.label', default: 'YbRole')] as Object[],
+                            "Another user has updated this YbRole while you were editing")
+                    render(view: "ybRoaledit", model: [ybRoleInstance: ybRoleInstance])
+                    return
+                }
+            }
+
+            ybRoleInstance.properties = params
+
+            if (!ybRoleInstance.save(flush: true)) {
+                render(view: "ybRoaledit", model: [ybRoleInstance: ybRoleInstance])
+                return
+            }
+
+            flash.message = message(code: 'default.updated.message', args: [message(code: 'ybRole.label', default: 'YbRole'), ybRoleInstance.id])
+            redirect(action: "ybRoleshow", id: ybRoleInstance.id)
+        }
 
 
 
