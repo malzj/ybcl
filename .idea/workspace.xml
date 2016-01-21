@@ -66,11 +66,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="YbLoginController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="YbLoginController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="0" selection-start="4269" selection-end="4269" vertical-scroll-proportion="0.3307393" vertical-offset="2480" max-vertical-offset="4313">
-              <folding />
+            <state line="257" column="22" selection-start="9338" selection-end="9352" vertical-scroll-proportion="-2.0869565" vertical-offset="1890" max-vertical-offset="2964">
+              <folding>
+                <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,25 +86,43 @@
       <file leaf-file-name="ybUserEdit.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserEdit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="62" selection-start="1758" selection-end="1758" vertical-scroll-proportion="-3.8431373" vertical-offset="697" max-vertical-offset="2850">
+            <state line="40" column="52" selection-start="0" selection-end="7038" vertical-scroll-proportion="-1.2352941" vertical-offset="697" max-vertical-offset="2850">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ybUserCreate.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserCreate.gsp">
+      <file leaf-file-name="ybClientEdit.gsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientEdit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="40" selection-start="1914" selection-end="5019" vertical-scroll-proportion="0.0" vertical-offset="1881" max-vertical-offset="2736">
+            <state line="47" column="50" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.6681223" vertical-offset="740" max-vertical-offset="2641">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YbUser.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbUser.groovy">
+      <file leaf-file-name="ybClientShow.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientShow.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="19" selection-start="173" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="20" max-vertical-offset="532">
+            <state line="87" column="120" selection-start="3506" selection-end="3590" vertical-scroll-proportion="-1.882353" vertical-offset="1557" max-vertical-offset="2755">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ybClientCreate.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientCreate.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="111" selection-start="1838" selection-end="1838" vertical-scroll-proportion="-3.745098" vertical-offset="778" max-vertical-offset="2679">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YbClient.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbClient.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="18" selection-start="204" selection-end="213" vertical-scroll-proportion="-3.489796" vertical-offset="114" max-vertical-offset="532">
               <folding />
             </state>
           </provider>
@@ -105,22 +131,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YbUserController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbUserController.groovy">
+      <file leaf-file-name="ybClientList.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientList.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="5" selection-start="1616" selection-end="2817" vertical-scroll-proportion="-9.130435" vertical-offset="816" max-vertical-offset="1539">
-              <folding>
-                <element signature="n#!!block;n#update#0;n#!!block;n#YbUserController#0" expanded="false" />
-              </folding>
+            <state line="77" column="68" selection-start="3340" selection-end="3352" vertical-scroll-proportion="-1.862745" vertical-offset="1368" max-vertical-offset="3192">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ybindex.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybindex.gsp">
+      <file leaf-file-name="YbClientController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbClientController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="58" selection-start="281" selection-end="299" vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="551">
-              <folding />
+            <state line="81" column="5" selection-start="1679" selection-end="2913" vertical-scroll-proportion="-3.4782608" vertical-offset="433" max-vertical-offset="703">
+              <folding>
+                <element signature="n#!!block;n#save#0;n#!!block;n#YbClientController#0" expanded="false" />
+                <element signature="n#!!block;n#show#0;n#!!block;n#YbClientController#0" expanded="false" />
+                <element signature="n#!!block;n#edit#0;n#!!block;n#YbClientController#0" expanded="false" />
+                <element signature="n#!!block;n#update#0;n#!!block;n#YbClientController#0" expanded="false" />
+                <element signature="n#!!block;n#delete#0;n#!!block;n#YbClientController#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,7 +158,7 @@
       <file leaf-file-name="ybUserList.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserList.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="62" selection-start="3067" selection-end="3067" vertical-scroll-proportion="0.0" vertical-offset="1235" max-vertical-offset="3154">
+            <state line="73" column="13" selection-start="0" selection-end="5956" vertical-scroll-proportion="-3.72549" vertical-offset="1197" max-vertical-offset="3154">
               <folding />
             </state>
           </provider>
@@ -137,7 +167,7 @@
       <file leaf-file-name="ybUsershow.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUsershow.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="62" selection-start="3709" selection-end="3709" vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="2869">
+            <state line="93" column="22" selection-start="0" selection-end="6070" vertical-scroll-proportion="-2.5294118" vertical-offset="1638" max-vertical-offset="2869">
               <folding />
             </state>
           </provider>
@@ -160,11 +190,15 @@
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/left.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/layouts/head.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/_sidebar.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybUserCreate.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybUserList.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybUsershow.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybUserEdit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybUserCreate.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybClientCreate.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybClientList.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybClientShow.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybClientEdit.gsp" />
       </list>
     </option>
   </component>
@@ -469,16 +503,16 @@
       <updated>1453338350561</updated>
       <workItem from="1453338358103" duration="7766000" />
       <workItem from="1453346623774" duration="1500000" />
-      <workItem from="1453348746160" duration="2675000" />
+      <workItem from="1453348746160" duration="9174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11941000" />
+    <option name="totallyTimeSpent" value="18440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -491,7 +525,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43934426" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43934426" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -534,7 +568,15 @@
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="110" column="15" selection-start="3432" selection-end="3432" vertical-scroll-proportion="0.0" vertical-offset="1983" max-vertical-offset="3401">
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -602,7 +644,15 @@
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="74" column="0" selection-start="2156" selection-end="2156" vertical-scroll-proportion="0.0" vertical-offset="1199" max-vertical-offset="2109">
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,7 +691,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/head.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="10" selection-start="747" selection-end="1556" vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="1159" />
+        <state line="31" column="10" selection-start="747" selection-end="1556" vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="1159">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybindex.gsp">
@@ -709,7 +761,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/head.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="10" selection-start="747" selection-end="1556" vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="1159" />
+        <state line="31" column="10" selection-start="747" selection-end="1556" vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="1159">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/fwsShop/list.gsp">
@@ -756,27 +810,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserList.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="62" selection-start="3067" selection-end="3067" vertical-scroll-proportion="0.0" vertical-offset="1235" max-vertical-offset="3154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUsershow.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="62" selection-start="3709" selection-end="3709" vertical-scroll-proportion="0.0" vertical-offset="1638" max-vertical-offset="2869">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserCreate.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="40" selection-start="1914" selection-end="5019" vertical-scroll-proportion="0.0" vertical-offset="1881" max-vertical-offset="2736">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbUserController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="5" selection-start="1616" selection-end="2817" vertical-scroll-proportion="-9.130435" vertical-offset="816" max-vertical-offset="1539">
@@ -786,16 +819,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbRoleController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="86" selection-start="339" selection-end="417" vertical-scroll-proportion="-6.6086955" vertical-offset="114" max-vertical-offset="2052">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserList.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="13" selection-start="0" selection-end="5956" vertical-scroll-proportion="-3.72549" vertical-offset="1197" max-vertical-offset="3154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserCreate.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="32" selection-start="1641" selection-end="1643" vertical-scroll-proportion="0.4978166" vertical-offset="798" max-vertical-offset="2736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbGongNengController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="52" selection-start="468" selection-end="516" vertical-scroll-proportion="-4.988327" vertical-offset="1624" max-vertical-offset="2052">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientCreate.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="111" selection-start="1838" selection-end="1838" vertical-scroll-proportion="-3.745098" vertical-offset="778" max-vertical-offset="2679">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUsershow.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="22" selection-start="0" selection-end="6070" vertical-scroll-proportion="-2.5294118" vertical-offset="1638" max-vertical-offset="2869">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbClient.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="204" selection-end="213" vertical-scroll-proportion="-3.489796" vertical-offset="114" max-vertical-offset="532">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserEdit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="62" selection-start="1758" selection-end="1758" vertical-scroll-proportion="-3.8431373" vertical-offset="697" max-vertical-offset="2850">
+        <state line="40" column="52" selection-start="0" selection-end="7038" vertical-scroll-proportion="-1.2352941" vertical-offset="697" max-vertical-offset="2850">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientList.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="68" selection-start="3340" selection-end="3352" vertical-scroll-proportion="-1.862745" vertical-offset="1368" max-vertical-offset="3192">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientShow.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="120" selection-start="3506" selection-end="3590" vertical-scroll-proportion="-1.882353" vertical-offset="1557" max-vertical-offset="2755">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbClientController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="5" selection-start="1679" selection-end="2913" vertical-scroll-proportion="-3.4782608" vertical-offset="433" max-vertical-offset="703">
+          <folding>
+            <element signature="n#!!block;n#save#0;n#!!block;n#YbClientController#0" expanded="false" />
+            <element signature="n#!!block;n#show#0;n#!!block;n#YbClientController#0" expanded="false" />
+            <element signature="n#!!block;n#edit#0;n#!!block;n#YbClientController#0" expanded="false" />
+            <element signature="n#!!block;n#update#0;n#!!block;n#YbClientController#0" expanded="false" />
+            <element signature="n#!!block;n#delete#0;n#!!block;n#YbClientController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="0" selection-start="4269" selection-end="4269" vertical-scroll-proportion="0.3307393" vertical-offset="2480" max-vertical-offset="4313">
+        <state line="257" column="22" selection-start="9338" selection-end="9352" vertical-scroll-proportion="-2.0869565" vertical-offset="1890" max-vertical-offset="2964">
+          <folding>
+            <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientEdit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="50" selection-start="1746" selection-end="1746" vertical-scroll-proportion="0.6681223" vertical-offset="740" max-vertical-offset="2641">
           <folding />
         </state>
       </provider>
