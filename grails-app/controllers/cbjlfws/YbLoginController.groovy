@@ -198,24 +198,117 @@ class YbLoginController {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //金成柱
+    //功能列表
     def ybGongNengList(Integer max){
-        params.max = Math.min(max ?: 10, 100)
-        [ybGongNengInstanceList: YbGongNeng.list(params), ybGongNengInstanceTotal: YbGongNeng.count()]
+        params.max = Math.min(max ?: 10, 100)   //分页作用
+        def list = side()
+        [ybGongNengInstanceList: YbGongNeng.list(params), ybGongNengInstanceTotal: YbGongNeng.count(), list:list]
     }
+
+    def ybGongNengCreate(){
+        def list = side()
+        [ybGongNengInstance: new YbGongNeng(params), list: list]
+    }
+
+    def ybGongNengSave() {
+        def ybGongNengInstance = new YbGongNeng(params)
+        if (!ybGongNengInstance.save(flush: true)) {
+            render(view: "ybGongNengCreate", model: [ybGongNengInstance: ybGongNengInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.created.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), ybGongNengInstance.id])
+        redirect(action: "ybGongNengList", id: ybGongNengInstance.id)
+    }
+
+    def ybGongNengShow(Long id) {
+        def list = side()
+        def ybGongNengInstance = YbGongNeng.get(id)
+        if (!ybGongNengInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+            redirect(action: "list")
+            return
+        }
+
+        [ybGongNengInstance: ybGongNengInstance, list: list]
+    }
+
+    def ybGongNengDelete(Long id) {
+//        def list = side()
+        def ybGongNengInstance = YbGongNeng.get(id)
+        if (!ybGongNengInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+            redirect(action: "ybGongNengList")
+            return
+        }
+
+        try {
+            ybGongNengInstance.delete(flush: true)
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+            redirect(action: "ybGongNengList")
+        }
+        catch (DataIntegrityViolationException e) {
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+            redirect(action: "ybGongNengShow", id: id)
+        }
+    }
+
+    def ybGongNengEdit(Long id) {
+        def list = side()
+        def ybGongNengInstance = YbGongNeng.get(id)
+        if (!ybGongNengInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+            redirect(action: "list")
+            return
+        }
+
+        [ybGongNengInstance: ybGongNengInstance, list: list]
+    }
+
+    def ybGongNengUpdate(Long id, Long version) {
+        def ybGongNengInstance = YbGongNeng.get(id)
+        if (!ybGongNengInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), id])
+            redirect(action: "ybGongNengList")
+            return
+        }
+
+        if (version != null) {
+            if (ybGongNengInstance.version > version) {
+                ybGongNengInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                        [message(code: 'ybGongNeng.label', default: 'YbGongNeng')] as Object[],
+                        "Another user has updated this YbGongNeng while you were editing")
+                render(view: "ybGongNengEdit", model: [ybGongNengInstance: ybGongNengInstance])
+                return
+            }
+        }
+
+        ybGongNengInstance.properties = params
+
+        if (!ybGongNengInstance.save(flush: true)) {
+            render(view: "ybGongNengEdit", model: [ybGongNengInstance: ybGongNengInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'ybGongNeng.label', default: 'YbGongNeng'), ybGongNengInstance.id])
+        redirect(action: "ybGongNengShow", id: ybGongNengInstance.id)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

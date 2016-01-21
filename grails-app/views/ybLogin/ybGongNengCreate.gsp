@@ -43,42 +43,35 @@
             <div class="row">
                 <div class="col-lg-12">
                     <section class="panel">
+
+
                         <header class="panel-heading">
-                            <h2 style="float:left;">功能列表</h2>
-                            <g:link controller="ybLogin" action="ybGongNengCreate" class="btn btn-info" style="display:block;float:right;">新建功能</g:link>
-                            <div style="clear:both;"></div>
+                            新建功能
                         </header>
-                        <table class="table table-striped table-advance table-hover">
-                            <thead>
-                            <tr>
-
-                                <th>功能名称</th>
-                                <th>功能链接</th>
-                                <th>时间</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <g:each in="${ybGongNengInstanceList}" status="i" var="userInstance">
-                                <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-                                    <td>${userInstance.functionName}</td>
-                                    <td>${userInstance.functionLink}</td>
-                                    <td>${userInstance.time}</td>
-
-
-                                    <td>
-                                        <g:link action="ybGongNengShow" id="${userInstance?.id}" class="btn btn-success btn-xs"><i class="fa fa-eye"></i></g:link>
-                                        <g:link action="ybGongNengEdit" id="${userInstance?.id}" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></g:link>
-                                        <g:link action="ybGongNengDelete" id="${userInstance?.id}" class="btn btn-danger btn-xs" onclick="return confirm('确定删除？');"><i class="fa fa-trash-o "></i></g:link>
-                                    </td>
-
-
+                        <div class="panel-body">
+                            <g:form class="form-horizontal tasi-form" controller="ybLogin" action="ybGongNengSave" method= "post" enctype= "multipart/form-data">
+                                <table>
+                                    <tr>
+                                        <td>功能名称：</td>
+                                        <td width="345"><input name="functionName" class="form-control form-control-inline input-medium default-date-picker" type="text" value=""></td>
+                                    </tr>
+                                <tr>
+                                    <td>功能链接：</td>
+                                    <td><input name="functionLink" class="form-control form-control-inline input-medium default-date-picker" type="text" value=""></td>
                                 </tr>
-                            </g:each>
 
-                            </tbody>
-                        </table>
-                        <div class="pagination">
-                            <g:paginate total="${ybGongNengInstanceTotal}" />
+                                <td>
+                                    创建时间：
+                                </td>
+                                <td>
+                                    <g:datePicker name="time" precision="day"  value=""  />
+                                </td>
+                                <tr>
+                                    <td></td>
+                                    <td align="right"><button type="submit" class="btn btn-info">保存</button><a href="javascript:history.go(-1);" class="ml20 btn btn-info">取消</a></td>
+                                </tr>
+                                </table>
+                            </g:form>
                         </div>
                     </section>
                 </div>
@@ -87,22 +80,7 @@
 
         </section>
     </section>
-    <!--main content end-->
 
-    <!-- Right Slidebar start -->
-
-    <!-- Right Slidebar end -->
-
-    <!--footer start-->
-    %{--<footer class="site-footer">--}%
-    %{--<div class="text-center">--}%
-    %{--2013 &copy; FlatLab by VectorLab.--}%
-    %{--<a href="index.html#" class="go-top">--}%
-    %{--<i class="fa fa-angle-up"></i>--}%
-    %{--</a>--}%
-    %{--</div>--}%
-    %{--</footer>--}%
-    <!--footer end-->
 </section>
 
 <!-- js placed at the end of the document so the pages load faster -->
@@ -128,28 +106,7 @@
 <script src="${resource(dir: 'js', file: 'easy-pie-chart.js')}"></script>
 <script src="${resource(dir: 'js', file: 'count.js')}"></script>
 
-%{--<script>--}%
 
-%{--//owl carousel--}%
-
-%{--$(document).ready(function() {--}%
-%{--$("#owl-demo").owlCarousel({--}%
-%{--navigation : true,--}%
-%{--slideSpeed : 300,--}%
-%{--paginationSpeed : 400,--}%
-%{--singleItem : true,--}%
-%{--autoPlay:true--}%
-
-%{--});--}%
-%{--});--}%
-
-%{--//custom select box--}%
-
-%{--$(function(){--}%
-%{--$('select.styled').customSelect();--}%
-%{--});--}%
-
-%{--</script>--}%
 
 </body>
 </html>
