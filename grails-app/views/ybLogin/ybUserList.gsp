@@ -1,75 +1,161 @@
 <%--
   Created by IntelliJ IDEA.
-  User: malmemeda
-  Date: 16-1-20
-  Time: 下午5:25
+  User: Administrator
+  Date: 15-6-16
+  Time: 下午3:59
 --%>
 
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <link href="${resource(dir: 'bootstrap/css', file: 'signin.css')}" rel="stylesheet" type="text/css">
-    <link href="${resource(dir: 'bootstrap/css', file: 'bootstrap.min.css')}" rel="stylesheet" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>亦宝车联首页</title>
+    <title>亦宝车联后台管理系统</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="${resource(dir: 'css', file: 'bootstrap.min.css')}" rel="stylesheet">
+    <link href="${resource(dir: 'css', file: 'bootstrap-reset.css')}" rel="stylesheet">
+    <!--external css-->
+    <link href="${resource(dir: 'assets/font-awesome/css', file: 'font-awesome.css')}" rel="stylesheet">
+    <link href="${resource(dir: 'assets/jquery-easy-pie-chart', file: 'jquery.easy-pie-chart.css')}" rel="stylesheet">
+    <link href="${resource(dir: 'css', file: 'owl.carousel.css')}" rel="stylesheet">
+
+    <!--right slidebar-->
+    <link href="${resource(dir: 'css', file: 'slidebars.css')}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="${resource(dir: 'css', file: 'styleone.css')}" rel="stylesheet">
+    <link href="${resource(dir: 'css', file: 'style-responsive.css')}" rel="stylesheet">
+
+    <link href="${resource(dir: 'css', file: 'ownset.css')}" rel="stylesheet">
 </head>
 
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">亦宝车联</a>
+
+<section id="container" >
+<!--header start-->
+<g:render template="header" />
+<!--header end-->
+<!--sidebar start-->
+<g:render template="sidebar" />
+<!--sidebar end-->
+<!--main content start-->
+<section id="main-content">
+    <section class="wrapper mt80">
+        <div class="row">
+            <div class="col-lg-12">
+                <section class="panel">
+                    <header class="panel-heading">
+                        <h2 style="float:left;">用户列表</h2>
+                        <g:link controller="ybLogin" action="ybUserCreate" class="btn btn-info" style="display:block;float:right;">新建用户</g:link>
+                        <div style="clear:both;"></div>
+                    </header>
+                    <table class="table table-striped table-advance table-hover">
+                        <thead>
+                        <tr>
+
+                            <th>用户名</th>
+                            <th>姓名</th>
+                            <th>手机号</th>
+                            <th>职位</th>
+                            <th>时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <g:each in="${ybUserInstanceList}" status="i" var="userInstance">
+                            <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
+                                <td>${userInstance.username}</td>
+                                <td>${userInstance.name}</td>
+                                <td>${userInstance.phone}</td>
+                                <td>${userInstance.position}</td>
+                                <td>${userInstance.time}</td>
+
+
+
+                                <td>
+                                    <g:link action="ybUsershow" id="${userInstance?.id}" class="btn btn-success btn-xs"><i class="fa fa-eye"></i></g:link>
+                                    <g:link action="ybUserEdit" id="${userInstance?.id}" class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></g:link>
+                                    <g:link action="ybUserdelete" id="${userInstance?.id}" class="btn btn-danger btn-xs" onclick="return confirm('确定删除？');"><i class="fa fa-trash-o "></i></g:link>
+                                </td>
+
+
+                            </tr>
+                        </g:each>
+
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <g:paginate total="${ybUserInstanceTotal}" />
+                    </div>
+                </section>
+            </div>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><g:link controller="ybLogin" action="list">用户管理</g:link></li>
-                <li><g:link action="ybGongNengList">功能管理</g:link></li>
-                <li><g:link action="">用户权限</g:link></li>
-                <li><g:link action="">亦宝车联客户管理</g:link></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
-<tbody>
-  <div class="container">
-    <table class="table table-condensed">
-
-        <thead>
-        <tr>
-            <th>账户</th>
-            <th>真实姓名</th>
-            <th>手机号</th>
-            <th>职位</th>
-            <th>时间</th>
-        </tr>
-        </thead>
-        <tbody>
-        <g:each in="${ybUserInstanceList}" status="i" var="ybUserInstance">
-            <tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-
-                <td><g:link action="show" id="${ybUserInstance.id}">${fieldValue(bean: ybUserInstance, field: "username")}</g:link></td>
-
-                <td>${fieldValue(bean: ybUserInstance, field: "name")}</td>
-
-                <td>${fieldValue(bean: ybUserInstance, field: "phone")}</td>
-
-                <td>${fieldValue(bean: ybUserInstance, field: "position")}</td>
-
-                <td><g:formatDate date="${ybUserInstance.time}" /></td>
-
-            </tr>
-        </g:each>
-        </tbody>
-    </table>
 
 
-</div>
-</tbody>
+    </section>
+</section>
+<!--main content end-->
+
+<!-- Right Slidebar start -->
+
+<!-- Right Slidebar end -->
+
+<!--footer start-->
+%{--<footer class="site-footer">--}%
+%{--<div class="text-center">--}%
+%{--2013 &copy; FlatLab by VectorLab.--}%
+%{--<a href="index.html#" class="go-top">--}%
+%{--<i class="fa fa-angle-up"></i>--}%
+%{--</a>--}%
+%{--</div>--}%
+%{--</footer>--}%
+<!--footer end-->
+</section>
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="${resource(dir: 'js', file: 'jquery.js')}"></script>
+<script src="${resource(dir: 'js', file: 'bootstrap.min.js')}"></script>
+<script class="include" type="text/javascript" src="${resource(dir: 'js', file: 'jquery.dcjqaccordion.2.7.js')}"></script>
+<script src="${resource(dir: 'js', file: 'jquery.scrollTo.min.js')}"></script>
+<script src="${resource(dir: 'js', file: 'jquery.nicescroll.js')}" type="text/javascript"></script>
+<script src="${resource(dir: 'js', file: 'jquery.sparkline.js')}" type="text/javascript"></script>
+<script src="${resource(dir: 'assets/jquery-easy-pie-chart/', file: 'jquery.easy-pie-chart.js')}"></script>
+<script src="${resource(dir: 'js', file: 'owl.carousel.js')}" ></script>
+<script src="${resource(dir: 'js', file: 'jquery.customSelect.min.js')}" ></script>
+<script src="${resource(dir: 'js', file: 'respond.min.js')}" ></script>
+
+<!--right slidebar-->
+<script src="${resource(dir: 'js', file: 'slidebars.min.js')}"></script>
+
+<!--common script for all pages-->
+<script src="${resource(dir: 'js', file: 'common-scripts.js')}"></script>
+
+<!--script for this page-->
+<script src="${resource(dir: 'js', file: 'sparkline-chart.js')}"></script>
+<script src="${resource(dir: 'js', file: 'easy-pie-chart.js')}"></script>
+<script src="${resource(dir: 'js', file: 'count.js')}"></script>
+
+%{--<script>--}%
+
+%{--//owl carousel--}%
+
+%{--$(document).ready(function() {--}%
+%{--$("#owl-demo").owlCarousel({--}%
+%{--navigation : true,--}%
+%{--slideSpeed : 300,--}%
+%{--paginationSpeed : 400,--}%
+%{--singleItem : true,--}%
+%{--autoPlay:true--}%
+
+%{--});--}%
+%{--});--}%
+
+%{--//custom select box--}%
+
+%{--$(function(){--}%
+%{--$('select.styled').customSelect();--}%
+%{--});--}%
+
+%{--</script>--}%
+
 </body>
 </html>
