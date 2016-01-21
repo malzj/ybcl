@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ybcl.iml" filepath="$PROJECT_DIR$/ybcl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ybcl-grailsPlugins.iml" filepath="$PROJECT_DIR$/ybcl-grailsPlugins.iml" />
     </modules>
   </component>
 </project>
