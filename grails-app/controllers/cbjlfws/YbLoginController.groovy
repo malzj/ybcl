@@ -5,7 +5,9 @@ import org.springframework.dao.DataIntegrityViolationException
 class YbLoginController {
 
     def index() {
-
+        def msg =""
+        msg= params.msg
+        [msg:msg]
     }
 
     def login() {

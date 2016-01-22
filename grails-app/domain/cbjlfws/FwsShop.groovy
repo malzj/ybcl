@@ -15,7 +15,7 @@ class FwsShop {
     //服务商店内联系电话
     String linkManPhone
    static  hasOne = [ybClient:YbClient]
-    static  hasMany = [fwsStation:FwsStation,fwsUser:FwsUser]
+    static  hasMany = [fwsStation:FwsStation,fwsUser:FwsUser,department:Department]
     static constraints = {
     }
 }
