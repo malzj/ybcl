@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/YBHT.iml" filepath="$PROJECT_DIR$/YBHT.iml" />
-      <module fileurl="file://$PROJECT_DIR$/YBHT-grailsPlugins.iml" filepath="$PROJECT_DIR$/YBHT-grailsPlugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YBHTDM.iml" filepath="$PROJECT_DIR$/YBHTDM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/YBHTDM-grailsPlugins.iml" filepath="$PROJECT_DIR$/YBHTDM-grailsPlugins.iml" />
     </modules>
   </component>
 </project>

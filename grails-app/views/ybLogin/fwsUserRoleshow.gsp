@@ -43,41 +43,48 @@
             <div class="middle_content">
                 <div class="m_box">
                     <header class="panel-heading">
-                        <span><i class="yh"></i>修改功能</span>
+                        <span><i class="yh"></i>服务商权限信息</span>
                     </header>
-                    <g:form action="ybGongNengUpdate" method="post">
-
-                        <g:hiddenField name="id" value="${ybGongNengInstance?.id}" />
-                        <g:hiddenField name="version" value="${ybGongNengInstance?.version}" />
-                        <table>
+                    <table>
                         <tr>
-                            <td>功能名称：</td>
-                            <td><input name="functionName" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${ybGongNengInstance.functionName}"></td>
+                            <td>服务商用户ID：</td>
+                            <td width="345">${fieldValue(bean: fwsUserRoleInstance, field: "fwsUserRoleId")}</td>
                         </tr>
                         <tr>
-                            <td>功能链接：</td>
-                            <td><input name="functionLink" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${ybGongNengInstance.functionLink}"></td>
+                            <td>服务商功能ID：</td>
+                            <td>${fieldValue(bean: fwsUserRoleInstance, field: "fwsUserRoleGongNengId")}</td>
                         </tr>
-
                         <tr>
-                        <td>
-                            创建时间：
-                        </td>
-                        <td>
-                            <g:datePicker name="time" precision="day"  value=""  />
-                        </td>
+                            <td>时间：</td>
+                            <td>${fieldValue(bean: fwsUserRoleInstance, field: "fwsUserRoleTime")}</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td align="right"><button type="submit" class="btn btn-info">保存</button><a href="javascript:history.go(-1);" class="ml20 btn btn-info">取消</a></td>
+                            <td align="right">
+                                <g:form>
+                                    <g:hiddenField name="id" value="${fwsUserRoleInstance?.id}" />
+                                    <g:link action="fwsUserRoleedit" id="${fwsUserRoleInstance?.id}" class="btn btn-info">修改</g:link>
+                                    <g:actionSubmit type="submit" class="btn btn-info" action="fwsUserdelete"  value="删除" onclick="return confirm('确定删除?');" />
+                                    <a href="javascript:history.go(-1);" class="ml15 btn btn-info">取消</a>
+                                </g:form>
+                            </td>
                         </tr>
-                        </table>
-                    </g:form>
+                    </table>
                 </div>
             </div>
         </section>
         <!--main content end-->
 
+        <!--footer start-->
+        <footer class="site-footer">
+            <div class="text-center">
+                2013 &copy; FlatLab by VectorLab.
+                <a href="index.html#" class="go-top">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
+        </footer>
+        <!--footer end-->
     </section>
 
 </section>

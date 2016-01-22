@@ -493,6 +493,199 @@ class YbLoginController {
             redirect(action: "ybRoleshow", id: ybRoleInstance.id)
         }
 
+//金成柱 服务商功能
+    //列表
+    def fwsGongNengList(Integer max) {
+        params.max = Math.min(max ?: 10, 100)
+        def list = side()
+        [fwsGongNengInstanceList: FwsGongNeng.list(params), fwsGongNengInstanceTotal: FwsGongNeng.count(), list: list]
+    }
+
+    //添加
+    def fwsGongNengCreate() {
+        def list = side()
+        [fwsGongNengInstance: new FwsGongNeng(params), list: list]
+    }
+
+    //保存
+    def fwsGongNengSave() {
+        def fwsGongNengInstance = new FwsGongNeng(params)
+        if (!fwsGongNengInstance.save(flush: true)) {
+            render(view: "fwsGongNengCreate", model: [fwsGongNengInstance: fwsGongNengInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.created.message', args: [message(code: 'fwsGongNeng.label', default: 'FwsGongNeng'), fwsGongNengInstance.id])
+        redirect(action: "fwsGongNengList", id: fwsGongNengInstance.id)
+    }
+
+    //查看
+    def fwsGongNengShow(Long id) {
+        def list = side()
+        def fwsGongNengInstance = FwsGongNeng.get(id)
+        if (!fwsGongNengInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsGongNeng.label', default: 'FwsGongNeng'), id])
+            redirect(action: "list")
+            return
+        }
+
+        [fwsGongNengInstance: fwsGongNengInstance, list: list]
+    }
+
+    //删除
+    def fwsGongNengDelete(Long id) {
+        def fwsGongNengInstance = FwsGongNeng.get(id)
+        if (!fwsGongNengInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsGongNeng.label', default: 'FwsGongNeng'), id])
+            redirect(action: "fwsGongNengList")
+            return
+        }
+
+        try {
+            fwsGongNengInstance.delete(flush: true)
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'fwsGongNeng.label', default: 'FwsGongNeng'), id])
+            redirect(action: "fwsGongNengList")
+        }
+        catch (DataIntegrityViolationException e) {
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'fwsGongNeng.label', default: 'FwsGongNeng'), id])
+            redirect(action: "fwsGongNengShow", id: id)
+        }
+    }
+
+    //编辑
+    def fwsGongNengEdit(Long id) {
+        def list = side()
+        def fwsGongNengInstance = FwsGongNeng.get(id)
+        if (!fwsGongNengInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsGongNeng.label', default: 'FwsGongNeng'), id])
+            redirect(action: "list")
+            return
+        }
+
+        [fwsGongNengInstance: fwsGongNengInstance, list: list]
+    }
+
+    //更新
+    def fwsGongNengUpdate(Long id, Long version) {
+        def fwsGongNengInstance = FwsGongNeng.get(id)
+        if (!fwsGongNengInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsGongNeng.label', default: 'FwsGongNeng'), id])
+            redirect(action: "fwsGongNengList")
+            return
+        }
+
+        if (version != null) {
+            if (fwsGongNengInstance.version > version) {
+                fwsGongNengInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                        [message(code: 'fwsGongNeng.label', default: 'FwsGongNeng')] as Object[],
+                        "Another user has updated this FwsGongNeng while you were editing")
+                render(view: "fwsGongNengEdit", model: [fwsGongNengInstance: fwsGongNengInstance])
+                return
+            }
+        }
+
+        fwsGongNengInstance.properties = params
+
+        if (!fwsGongNengInstance.save(flush: true)) {
+            render(view: "fwsGongNengEdit", model: [fwsGongNengInstance: fwsGongNengInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'fwsGongNeng.label', default: 'FwsGongNeng'), fwsGongNengInstance.id])
+        redirect(action: "fwsGongNengShow", id: fwsGongNengInstance.id)
+    }
+
+    //王钧民
+    def fwsUserRolelist(Integer max) {
+
+        params.max = Math.min(max ?: 10, 100)
+        def list = side()
+        [fwsUserRoleInstanceList: FwsUserRole.list(params), fwsUserRoleInstanceTotal: FwsUserRole.count(),list: list]
+    }
+    def fwsRoleCreate() {
+        def list = side()
+        [fwsUserRoleInstance: new FwsUserRole(params),list: list]
+    }
+    def fwsUserRolesave() {
+        def fwsUserRoleInstance = new FwsUserRole(params)
+        if (!fwsUserRoleInstance.save(flush: true)) {
+            render(view: "fwsRoleCreate", model: [fwsUserRoleInstance: fwsUserRoleInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.created.message', args: [message(code: 'fwsUserRole.label', default: 'FwsUserRole'), fwsUserRoleInstance.id])
+        redirect(action: "fwsUserRolelist", id: fwsUserRoleInstance.id)
+    }
+    def fwsUserRoleshow(Long id) {
+        def list = side()
+        def fwsUserRoleInstance = FwsUserRole.get(id)
+        if (!fwsUserRoleInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsUserRole.label', default: 'FwsUserRole'), id])
+            redirect(action: "list")
+            return
+        }
+
+        [fwsUserRoleInstance: fwsUserRoleInstance,list: list]
+    }
+    def fwsUserdelete(Long id) {
+        def fwsUserRoleInstance = FwsUserRole.get(id)
+        if (!fwsUserRoleInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsUserRole.label', default: 'FwsUserRole'), id])
+            redirect(action: "fwsUserRolelist")
+            return
+        }
+
+        try {
+            fwsUserRoleInstance.delete(flush: true)
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'fwsUserRole.label', default: 'FwsUserRole'), id])
+            redirect(action: "fwsUserRolelist")
+        }
+        catch (DataIntegrityViolationException e) {
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'fwsUserRole.label', default: 'FwsUserRole'), id])
+            redirect(action: "fwsUserRoleshow", id: id)
+        }
+    }
+    def fwsUserRoleedit(Long id) {
+        def list = side()
+        def fwsUserRoleInstance = FwsUserRole.get(id)
+        if (!fwsUserRoleInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsUserRole.label', default: 'FwsUserRole'), id])
+            redirect(action: "list")
+            return
+        }
+
+        [fwsUserRoleInstance: fwsUserRoleInstance,list: list]
+    }
+    def fwsUserRoleupdate(Long id, Long version) {
+        def fwsUserRoleInstance = FwsUserRole.get(id)
+        if (!fwsUserRoleInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsUserRole.label', default: 'FwsUserRole'), id])
+            redirect(action: "fwsUserRolelist")
+            return
+        }
+
+        if (version != null) {
+            if (fwsUserRoleInstance.version > version) {
+                fwsUserRoleInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                        [message(code: 'fwsUserRole.label', default: 'FwsUserRole')] as Object[],
+                        "Another user has updated this FwsUserRole while you were editing")
+                render(view: "fwsUserRoleedit", model: [fwsUserRoleInstance: fwsUserRoleInstance])
+                return
+            }
+        }
+
+        fwsUserRoleInstance.properties = params
+
+        if (!fwsUserRoleInstance.save(flush: true)) {
+            render(view: "fwsUserRoleedit", model: [fwsUserRoleInstance: fwsUserRoleInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'fwsUserRole.label', default: 'FwsUserRole'), fwsUserRoleInstance.id])
+        redirect(action: "fwsUserRoleshow", id: fwsUserRoleInstance.id)
+    }
+
 
 
 }
+

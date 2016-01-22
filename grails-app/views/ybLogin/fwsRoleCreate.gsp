@@ -38,46 +38,55 @@
     <g:render template="sidebar" />
     <!--sidebar end-->
     <!--main content start-->
-    <section id="main-content" class="col-xs-10" style="padding-left: 0;">
-        <section class="wrapper">
-            <div class="middle_content">
-                <div class="m_box">
-                    <header class="panel-heading">
-                        <span><i class="yh"></i>修改功能</span>
-                    </header>
-                    <g:form action="ybGongNengUpdate" method="post">
+    <section id="main-content">
+        <section class="wrapper mt80">
+            <div class="row">
+                <div class="col-lg-12">
+                    <section class="panel">
 
-                        <g:hiddenField name="id" value="${ybGongNengInstance?.id}" />
-                        <g:hiddenField name="version" value="${ybGongNengInstance?.version}" />
-                        <table>
-                        <tr>
-                            <td>功能名称：</td>
-                            <td><input name="functionName" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${ybGongNengInstance.functionName}"></td>
-                        </tr>
-                        <tr>
-                            <td>功能链接：</td>
-                            <td><input name="functionLink" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${ybGongNengInstance.functionLink}"></td>
-                        </tr>
 
-                        <tr>
-                        <td>
-                            创建时间：
-                        </td>
-                        <td>
-                            <g:datePicker name="time" precision="day"  value=""  />
-                        </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td align="right"><button type="submit" class="btn btn-info">保存</button><a href="javascript:history.go(-1);" class="ml20 btn btn-info">取消</a></td>
-                        </tr>
-                        </table>
-                    </g:form>
+                        <header class="panel-heading">
+                            服务商权限
+                        </header>
+                        <div class="panel-body">
+                            <g:form class="form-horizontal tasi-form" controller="ybLogin" action="fwsUserRolesave" method= "post" enctype= "multipart/form-data">
+                                <table>
+                                    <tr>
+                                        <td>服务商用户ID：</td>
+                                        <td width="345"><input name="fwsUserRoleId" class="form-control form-control-inline input-medium default-date-picker" type="text" value=""></td>
+                                    </tr>
+                                <tr>
+                                    <td>服务商功能ID：</td>
+                                    <td><input name="fwsUserRoleGongNengId" class="form-control form-control-inline input-medium default-date-picker" type="text" value=""></td>
+                                </tr>
+                                <g:each in="${gongnenglist}" status="i" var="gongneng">
+                                    <label class="checkbox-inline">
+                                        <input name="gongneng" type="checkbox" id="inlineCheckbox1" value="${gongneng.id}"> ${gongneng.functionName}
+                                    </label>
+                                </g:each>
+
+                                </td>
+                            </tr>
+                                <td>
+                                    创建时间：
+                                </td>
+                                <td>
+                                    <g:datePicker name="fwsUserRoleTime" precision="day"  value=""  />
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td align="right"><button type="submit" class="btn btn-info">保存</button><a href="javascript:history.go(-1);" class="ml20 btn btn-info">取消</a></td>
+                                </tr>
+                                </table>
+                            </g:form>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </section>
-        <!--main content end-->
 
+
+        </section>
     </section>
 
 </section>

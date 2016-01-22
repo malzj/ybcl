@@ -45,32 +45,32 @@
                     <header class="panel-heading">
                         <span><i class="yh"></i>修改功能</span>
                     </header>
-                    <g:form action="ybGongNengUpdate" method="post">
+                    <g:form action="fwsGongNengUpdate" method="post">
 
-                        <g:hiddenField name="id" value="${ybGongNengInstance?.id}" />
-                        <g:hiddenField name="version" value="${ybGongNengInstance?.version}" />
+                        <g:hiddenField name="id" value="${fwsGongNengInstance?.id}" />
+                        <g:hiddenField name="version" value="${fwsGongNengInstance?.version}" />
                         <table>
-                        <tr>
-                            <td>功能名称：</td>
-                            <td><input name="functionName" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${ybGongNengInstance.functionName}"></td>
-                        </tr>
-                        <tr>
-                            <td>功能链接：</td>
-                            <td><input name="functionLink" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${ybGongNengInstance.functionLink}"></td>
-                        </tr>
+                            <tr>
+                                <td>功能名称：</td>
+                                <td><input name="functionName" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${fwsGongNengInstance.functionName}"></td>
+                            </tr>
+                            <tr>
+                                <td>功能链接：</td>
+                                <td><input name="functionLink" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${fwsGongNengInstance.functionLink}"></td>
+                            </tr>
 
-                        <tr>
-                        <td>
-                            创建时间：
-                        </td>
-                        <td>
-                            <g:datePicker name="time" precision="day"  value=""  />
-                        </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td align="right"><button type="submit" class="btn btn-info">保存</button><a href="javascript:history.go(-1);" class="ml20 btn btn-info">取消</a></td>
-                        </tr>
+                            <tr>
+                                <td>
+                                    创建时间：
+                                </td>
+                                <td>
+                                    <g:datePicker name="time" precision="day"  value=""  />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td align="right"><button type="submit" class="btn btn-info">保存</button><a href="javascript:history.go(-1);" class="ml20 btn btn-info">取消</a></td>
+                            </tr>
                         </table>
                     </g:form>
                 </div>

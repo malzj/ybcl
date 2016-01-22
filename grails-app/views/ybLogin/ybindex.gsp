@@ -16,7 +16,7 @@
 <g:each in="${list}" status="i" var="li">
 
 
-    <g:link action="${li.functionLink}">${li.functionName}</g:link>
+    <g:link action="${li?.functionLink}">${li?.functionName}</g:link>
 
 </g:each>
 

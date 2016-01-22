@@ -43,28 +43,28 @@
             <div class="middle_content">
                 <div class="m_box">
                     <header class="panel-heading">
-                        <span><i class="yh"></i>修改功能</span>
+                        <span><i class="yh"></i>服务商修改权限</span>
                     </header>
-                    <g:form action="ybGongNengUpdate" method="post">
+                    <g:form action="fwsUserRoleupdate" method="post">
 
-                        <g:hiddenField name="id" value="${ybGongNengInstance?.id}" />
-                        <g:hiddenField name="version" value="${ybGongNengInstance?.version}" />
+                        <g:hiddenField name="id" value="${fwsUserRoleInstance?.id}" />
+                        <g:hiddenField name="version" value="${fwsUserRoleInstance?.version}" />
                         <table>
+                                   <tr>
+                                       <td>服务商用户ID：</td>
+                                       <td width="345"><input name="fwsUserRoleId" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${fwsUserRoleInstance?.fwsUserRoleId}"></td>
+                                    </tr>
                         <tr>
-                            <td>功能名称：</td>
-                            <td><input name="functionName" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${ybGongNengInstance.functionName}"></td>
-                        </tr>
-                        <tr>
-                            <td>功能链接：</td>
-                            <td><input name="functionLink" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${ybGongNengInstance.functionLink}"></td>
+                            <td>服务商功能ID：</td>
+                            <td><input name="fwsUserRoleGongNengId" class="form-control form-control-inline input-medium default-date-picker" type="text" value="${fwsUserRoleInstance?.fwsUserRoleGongNengId}"></td>
                         </tr>
 
-                        <tr>
+
                         <td>
                             创建时间：
                         </td>
                         <td>
-                            <g:datePicker name="time" precision="day"  value=""  />
+                            <g:datePicker name="fwsUserRoleTime" precision="day"  value="${fwsUserRoleInstance?.fwsUserRoleTime}"  />
                         </td>
                         </tr>
                         <tr>
