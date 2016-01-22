@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d651d48-1623-48ea-b2d2-a1d3bc813c1b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengCreate.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengEdit.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengList.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengShow.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengEdit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengEdit.gsp" />
     </list>
     <ignored path="ybcl.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,8 +59,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -74,14 +68,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="YbLoginController.groovy" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YbLoginController.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.52174">
-              <caret line="594" column="41" selection-start-line="594" selection-start-column="41" selection-end-line="594" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.33197555">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
                 <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
@@ -121,102 +115,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ybGongNengEdit.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengEdit.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.297873">
-              <caret line="83" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="7" />
-              <folding />
-            </state>
+      <file leaf-file-name="YbGongNeng.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbGongNeng.groovy">
+          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fwsGongNengEdit.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengEdit.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6382978">
-              <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+            <state vertical-scroll-proportion="-0.5769231">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fwsGongNengShow.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengShow.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.6595745">
-              <caret line="67" column="67" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ybClientShow.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientShow.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="16.914894">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fwsGongNengCreate.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengCreate.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.276596">
-              <caret line="51" column="114" selection-start-line="51" selection-start-column="114" selection-end-line="51" selection-end-column="114" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ybGongNengShow.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengShow.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="11.723404">
-              <caret line="50" column="81" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YbRoleController.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbRoleController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65217394">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fwsGongNengList.gsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengList.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58365756">
-              <caret line="69" column="71" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FwsGongNengController.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsGongNengController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.913044">
-              <caret line="81" column="5" selection-start-line="54" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!block;n#index#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
-                <element signature="n#!!block;n#index#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
-                <element signature="n#!!block;n#list#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
-                <element signature="n#!!block;n#create#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
-                <element signature="n#!!block;n#create#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
-                <element signature="n#!!block;n#save#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
-                <element signature="n#!!block;n#show#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
-                <element signature="n#!!block;n#update#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
-                <element signature="n#!!block;n#delete#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -251,8 +158,8 @@
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengCreate.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengList.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengShow.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengEdit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" />
       </list>
     </option>
   </component>
@@ -318,7 +225,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../guihuabao-02" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
   </component>
@@ -615,11 +522,12 @@
       <workItem from="1453354851795" duration="6904000" />
       <workItem from="1453364026088" duration="1246000" />
       <workItem from="1453365326092" duration="4707000" />
+      <workItem from="1453425336976" duration="3059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24798000" />
+    <option name="totallyTimeSpent" value="27857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="27" width="1400" height="833" extended-state="0" />
@@ -636,10 +544,9 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18893388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.268556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20512821" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18998528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -652,6 +559,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20512821" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -660,18 +568,18 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -690,8 +598,8 @@
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916054" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -708,7 +616,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -717,205 +625,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserEdit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengShow.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="66" selection-start-line="67" selection-start-column="66" selection-end-line="67" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/ApplicationResources.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserList.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="160" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="160" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/DataSource.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengList.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="70" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbGongNengController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="5" selection-start-line="54" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!block;n#save#0;n#!!block;n#YbGongNengController#0" expanded="false" />
-            <element signature="n#!!block;n#show#0;n#!!block;n#YbGongNengController#0" expanded="false" />
-            <element signature="n#!!block;n#edit#0;n#!!block;n#YbGongNengController#0" expanded="false" />
-            <element signature="n#!!block;n#update#0;n#!!block;n#YbGongNengController#0" expanded="false" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#YbGongNengController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbUser.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbUserController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserList.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybClientUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybRoleUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#fwsGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbUser.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbUserController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybUserList.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -930,7 +639,7 @@
           <caret line="74" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
@@ -1079,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1087,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1111,17 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbGongNeng.groovy">
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5961537">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1169,7 +864,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbRoleController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65217394">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
           <folding />
         </state>
@@ -1177,7 +872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengCreate.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.276596">
+        <state vertical-scroll-proportion="0.0">
           <caret line="51" column="114" selection-start-line="51" selection-start-column="114" selection-end-line="51" selection-end-column="114" />
           <folding />
         </state>
@@ -1185,7 +880,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybClientShow.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.914894">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1193,7 +888,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengShow.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="11.723404">
+        <state vertical-scroll-proportion="0.0">
           <caret line="50" column="81" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="81" />
           <folding />
         </state>
@@ -1201,7 +896,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengEdit.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.297873">
+        <state vertical-scroll-proportion="0.0">
           <caret line="83" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="110" selection-end-column="7" />
           <folding />
         </state>
@@ -1209,7 +904,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengShow.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.6595745">
+        <state vertical-scroll-proportion="0.0">
           <caret line="67" column="67" selection-start-line="67" selection-start-column="67" selection-end-line="67" selection-end-column="67" />
           <folding />
         </state>
@@ -1217,7 +912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsGongNengController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.913044">
+        <state vertical-scroll-proportion="0.0">
           <caret line="81" column="5" selection-start-line="54" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
           <folding>
             <element signature="n#!!block;n#index#0;n#!!block;n#FwsGongNengController#0" expanded="false" />
@@ -1233,13 +928,173 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengEdit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengList.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="71" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbRole.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.fusesource.jansi/jansi/jars/jansi-1.2.1-sources.jar!/org/fusesource/jansi/AnsiOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/src/grails-bootstrap-2.2.4-sources.jar!/grails/build/logging/GrailsConsole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="605" column="0" selection-start-line="605" selection-start-column="0" selection-end-line="605" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/src/grails-datastore-gorm-1.1.8.RELEASE-sources.jar!/org/grails/datastore/gorm/GormStaticApi.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.springframework/spring-core/jars/spring-core-3.1.4.RELEASE-sources.jar!/org/springframework/core/convert/TypeDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.springframework/spring-core/jars/spring-core-3.1.4.RELEASE-sources.jar!/org/springframework/util/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.springframework/spring-core/jars/spring-core-3.1.4.RELEASE-sources.jar!/org/springframework/util/ClassUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="892" column="0" selection-start-line="892" selection-start-column="0" selection-end-line="892" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.springframework/spring-beans/jars/spring-beans-3.1.4.RELEASE-sources.jar!/org/springframework/beans/propertyeditors/CharsetEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34554973">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.springframework/spring-beans/jars/spring-beans-3.1.4.RELEASE-sources.jar!/org/springframework/beans/PropertyEditorRegistrySupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="181" column="0" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
+          <folding>
+            <element signature="e#4411#4412#0" expanded="true" />
+            <element signature="e#4447#4448#0" expanded="true" />
+            <element signature="e#4809#4810#0" expanded="true" />
+            <element signature="e#4848#4849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.springframework/spring-beans/jars/spring-beans-3.1.4.RELEASE-sources.jar!/org/springframework/beans/TypeConverterDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.6.2-sources.jar!/org/apache/commons/logging/impl/SLF4JLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35951135">
+          <caret line="212" column="0" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+          <folding>
+            <element signature="e#6140#6141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60805863">
+          <caret line="619" column="0" selection-start-line="619" selection-start-column="0" selection-end-line="619" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.springframework/spring-webmvc/jars/spring-webmvc-3.1.4.RELEASE.jar!/org/springframework/web/servlet/HandlerExecutionChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/src/grails-datastore-gorm-1.1.8.RELEASE-sources.jar!/org/grails/datastore/gorm/finders/FinderMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../grails-2.2.4/lib/org.springframework/spring-beans/jars/spring-beans-3.1.4.RELEASE-sources.jar!/org/springframework/beans/SimpleTypeConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7120419">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#1360#1361#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbGongNeng.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5769231">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.52174">
-          <caret line="594" column="41" selection-start-line="594" selection-start-column="41" selection-end-line="594" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.33197555">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
-            <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
@@ -1275,22 +1130,6 @@
             <element signature="n#!!block;n#fwsGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#fwsGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengEdit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6382978">
-          <caret line="47" column="53" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengList.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58365756">
-          <caret line="69" column="71" selection-start-line="69" selection-start-column="71" selection-end-line="69" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
