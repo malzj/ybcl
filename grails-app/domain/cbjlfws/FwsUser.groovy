@@ -12,9 +12,13 @@ class FwsUser {
     String phone
     //职位
     String position
+//    //部门
+//    String  department
+        //收入
+    String money
     //录入时间
     Date time
-    static hasOne = [fwsShop:FwsShop]
+    static hasOne = [fwsShop:FwsShop,department:Department]
     static constraints = {
     }
 }
