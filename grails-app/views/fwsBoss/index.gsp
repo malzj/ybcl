@@ -18,7 +18,7 @@
 <div class="container">
 
     <g:form class="form-signin" action="login">
-        <h2 class="form-signin-heading">亦宝车联</h2>
+        <h2 class="form-signin-heading">亦宝车联Boss</h2>
         <label for="inputEmail" class="sr-only">账户</label>
         <input type="text" id="inputEmail" name="username" class="form-control" placeholder="账户" required autofocus>
         <label for="inputPassword" class="sr-only">密码</label>
