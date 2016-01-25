@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="ybcl dev" uuid="7990907d-e4bf-4821-8929-b27126f81cc6">
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <schema-pattern>ybcl.*</schema-pattern>
+      <default-schemas>ybcl.*</default-schemas>
+    </data-source>
+  </component>
+</project>
