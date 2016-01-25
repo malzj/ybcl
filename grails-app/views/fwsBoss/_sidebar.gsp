@@ -7,7 +7,7 @@
                 <i class="fa user"></i>
                 <span>用户管理</span>
             </g:link>
-            <g:link action="">
+            <g:link action="fwsDepartmentList" id="${id}">
                 <i class="fa user"></i>
                 <span>部门管理</span>
             </g:link>
