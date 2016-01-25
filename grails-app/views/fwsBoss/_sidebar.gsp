@@ -11,7 +11,7 @@
                 <i class="fa user"></i>
                 <span>部门管理</span>
             </g:link>
-            <g:link action="">
+            <g:link action="fwsStationList">
                 <i class="fa user"></i>
                 <span>工位管理</span>
             </g:link>

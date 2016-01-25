@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7be1e0c0-d375-4393-abda-377f86a92327" name="Default" comment="" />
+    <list default="true" id="ca1b2aad-c5e2-472c-b636-3e37fbb060b8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationCreate.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationEdit.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationList.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationShow.gsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ybcl-grailsPlugins.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ybcl.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ybclfws-grailsPlugins.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ybclfws.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsBossController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsBossController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YBHTDM-grailsPlugins.iml" afterPath="$PROJECT_DIR$/YBHTDM-grailsPlugins.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YBHTDM.iml" afterPath="$PROJECT_DIR$/YBHTDM.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/fwsBoss/_sidebar.gsp" afterPath="$PROJECT_DIR$/grails-app/views/fwsBoss/_sidebar.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="YBHTDM.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,127 +46,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fwsUserRoleedit.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsUserRoleedit.gsp">
+      <file leaf-file-name="FwsBossController.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsBossController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.787234">
-              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fwsGongNengEdit.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengEdit.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fwsUserRolelist.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsUserRolelist.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.872341">
-              <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fwsUserRoleshow.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsUserRoleshow.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.574469">
-              <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YbLoginController.groovy" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.722689">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+            <state vertical-scroll-proportion="-5.869565">
+              <caret line="230" column="33" selection-start-line="230" selection-start-column="33" selection-end-line="230" selection-end-column="33" />
               <folding>
-                <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsGongNengShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsUserRolelist#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsUserRolesave#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsUserRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
-                <element signature="n#!!block;n#fwsUserRoleedit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+                <element signature="n#!!block;n#index#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#login#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsShopList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsShopSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsUserList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsUserCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsUserSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsUserShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsUserEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsUserUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsUserDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsStationCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsStationSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsStationShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsStationDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsStationEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+                <element signature="n#!!block;n#fwsStationUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ybGongNengShow.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengShow.gsp">
+      <file leaf-file-name="fwsStationList.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationList.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="20.425531">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.085107">
+              <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ybindex.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybindex.gsp">
+      <file leaf-file-name="_sidebar.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/_sidebar.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.574468">
-              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            <state vertical-scroll-proportion="-4.1489363">
+              <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageFragmentCachingFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.grails/2.2.4/projects/ybclfws/plugins/cache-1.0.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java">
+      <file leaf-file-name="fwsStationCreate.gsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationCreate.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.009345794">
+              <caret line="61" column="70" selection-start-line="61" selection-start-column="70" selection-end-line="61" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FwsUserRoleController.groovy" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsUserRoleController.groovy">
+      <file leaf-file-name="fwsStationShow.gsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationShow.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.086956">
-              <caret line="81" column="5" selection-start-line="54" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
-              <folding>
-                <element signature="n#!!block;n#list#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
-                <element signature="n#!!block;n#save#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
-                <element signature="n#!!block;n#show#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
-                <element signature="n#!!block;n#edit#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
-                <element signature="n#!!block;n#delete#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fwsRoleCreate.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsRoleCreate.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.9787235">
-              <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+            <state vertical-scroll-proportion="-10.531915">
+              <caret line="65" column="62" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -163,14 +127,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsUserRole.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsUserRoleController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/fwsRoleCreate.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/fwsUserRolelist.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/fwsUserRoleshow.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/fwsUserRoleedit.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/ybLogin/ybindex.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsStationDepartmentController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsStationDepartment.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsStationManage.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsStationManageController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationShow.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationEdit.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationCreate.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/views/fwsBoss/_sidebar.gsp" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsBossController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsStation.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationList.gsp" />
       </list>
     </option>
   </component>
@@ -178,21 +145,12 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="NamedScopeManager">
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="106" />
-    <option name="y" value="23" />
-    <option name="width" value="1577" />
-    <option name="height" value="772" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -205,7 +163,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -216,28 +174,19 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YBHTDM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/grails-app/views/fwsStationDepartment" />
+    </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:YBHTDM">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -475,6 +424,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
@@ -498,54 +453,70 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7be1e0c0-d375-4393-abda-377f86a92327" name="Default" comment="" />
-      <created>1453424563892</created>
+      <changelist id="ca1b2aad-c5e2-472c-b636-3e37fbb060b8" name="Default" comment="" />
+      <created>1453460107075</created>
       <option name="number" value="Default" />
-      <updated>1453424563892</updated>
-      <workItem from="1453424567629" duration="9044000" />
+      <updated>1453460107075</updated>
+      <workItem from="1453460108570" duration="3313000" />
+      <workItem from="1453568020963" duration="215000" />
+      <workItem from="1453568240106" duration="6478000" />
+      <workItem from="1453646599076" duration="6527000" />
+      <workItem from="1453653410442" duration="4279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9044000" />
+    <option name="totallyTimeSpent" value="20812000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="106" y="23" width="1577" height="772" extended-state="1" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26682693" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21745351" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10882353" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17068404" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32572114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22873901" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -557,162 +528,302 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybRoleList.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5840164">
-          <caret line="19" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="156" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybRoleCreate.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.106383">
-          <caret line="16" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsUserRole.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7307693">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengList.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.361702">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengCreate.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.148935">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybRoleshow.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="13.404255">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengShow.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.446809">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengList.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.276596">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsRoleCreate.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.9787235">
-          <caret line="74" column="37" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsUserRoleshow.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.574469">
-          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsGongNengEdit.gsp">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsBossController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsUserRolelist.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.872341">
-          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/fwsUserRoleedit.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.787234">
-          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsUserRoleController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.086956">
-          <caret line="81" column="5" selection-start-line="54" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
+          <caret line="292" column="22" selection-start-line="292" selection-start-column="8" selection-end-line="292" selection-end-column="22" />
           <folding>
-            <element signature="n#!!block;n#list#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
-            <element signature="n#!!block;n#save#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
-            <element signature="n#!!block;n#show#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
-            <element signature="n#!!block;n#edit#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
-            <element signature="n#!!block;n#delete#0;n#!!block;n#FwsUserRoleController#0" expanded="false" />
+            <element signature="n#!!block;n#index#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#login#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.grails/2.2.4/projects/ybclfws/plugins/cache-1.0.1/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationEdit.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybindex.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.574468">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/ybLogin/ybGongNengShow.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="20.425531">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationShow.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationCreate.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationList.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsStation.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsStationController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="5" selection-start-line="54" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#list#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#create#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#create#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#save#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#show#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#edit#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#update#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="e#1860#2068#0" expanded="false" />
+            <element signature="n#!!block;n#delete#0;n#!!block;n#FwsStationController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsBossController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#index#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#login#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsBossController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#index#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#login#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsStation.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsBossController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="227" column="0" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#index#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#login#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsStation.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsStation/_form.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.23966943">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbUser.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbRole.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbGongNeng.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsUserRole.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsUserController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09538951">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/YbClient.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.049833886">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsGongNeng.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06410257">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/YbLoginController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.722689">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.59587955">
+          <caret line="606" column="24" selection-start-line="606" selection-start-column="24" selection-end-line="606" selection-end-column="24" />
           <folding>
+            <element signature="n#!!block;n#index#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#login#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#side#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybindex#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUsershow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengShow#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybGongNengUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientDelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientEdit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybClientUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="e#13946#14174#0" expanded="false" />
             <element signature="n#!!block;n#ybRoleList#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybRoleSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybRoaldelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#ybRoaledit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#ybRoleUpdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#fwsGongNengList#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#fwsGongNengCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#fwsGongNengSave#0;n#!!block;n#YbLoginController#0" expanded="false" />
@@ -723,10 +834,159 @@
             <element signature="n#!!block;n#fwsUserRolelist#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#fwsRoleCreate#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#fwsUserRolesave#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="e#23685#23808#0" expanded="false" />
             <element signature="n#!!block;n#fwsUserRoleshow#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#fwsUserdelete#0;n#!!block;n#YbLoginController#0" expanded="false" />
             <element signature="n#!!block;n#fwsUserRoleedit#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserRoleupdate#0;n#!!block;n#YbLoginController#0" expanded="false" />
+            <element signature="e#25920#26141#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsUser.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.049833886">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsStationController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="5" selection-start-line="54" selection-start-column="4" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!block;n#list#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#create#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#create#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#save#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#show#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#edit#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="n#!!block;n#update#0;n#!!block;n#FwsStationController#0" expanded="false" />
+            <element signature="e#1860#2068#0" expanded="false" />
+            <element signature="n#!!block;n#delete#0;n#!!block;n#FwsStationController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/Department.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24916944">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.582692">
+          <caret line="614" column="0" selection-start-line="614" selection-start-column="0" selection-end-line="614" selection-end-column="0" />
+          <folding>
+            <element signature="e#24969#24970#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationEdit.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6511628">
+          <caret line="62" column="184" selection-start-line="62" selection-start-column="184" selection-end-line="62" selection-end-column="184" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home/src.zip!/java/util/concurrent/FutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61350846">
+          <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/_sidebar.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1489363">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsShop.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.071428575">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationList.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.085107">
+          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/cbjlfws/FwsStation.groovy">
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.071428575">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationShow.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.531915">
+          <caret line="65" column="62" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/cbjlfws/FwsBossController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.869565">
+          <caret line="230" column="33" selection-start-line="230" selection-start-column="33" selection-end-line="230" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!block;n#index#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#login#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsShopSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserList#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsUserDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationCreate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationSave#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationShow#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationDelete#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationEdit#0;n#!!block;n#FwsBossController#0" expanded="false" />
+            <element signature="n#!!block;n#fwsStationUpdate#0;n#!!block;n#FwsBossController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fwsBoss/fwsStationCreate.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.009345794">
+          <caret line="61" column="70" selection-start-line="61" selection-start-column="70" selection-end-line="61" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>

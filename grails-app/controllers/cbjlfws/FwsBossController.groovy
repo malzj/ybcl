@@ -40,7 +40,7 @@ class FwsBossController {
         }
         [fwsShopList:fwsShopList,msg: msg]
     }
-      def fwsShopCreate(){
+    def fwsShopCreate(){
           [fwsShopInstance: new FwsShop(params)]
       }
     def fwsShopSave(){
@@ -61,6 +61,7 @@ class FwsBossController {
         }
 
     }
+
 
     def fwsUserList(){
         def fwsShopId = params.id
@@ -153,7 +154,6 @@ class FwsBossController {
 
         [fwsUserInstance: fwsUserInstance,name:fwsUserInstance.fwsShop.name,id: fwsShopId,departmentList:departmentList,gongnenglistrole:gongnenglistrole,listgongneng:listgongneng]
     }
-
     def fwsUserUpdate(Long id, Long version) {
         def fwsUserInstance = FwsUser.get(id)
            fwsUserInstance.department=Department.get(params.departmentId)
@@ -222,4 +222,123 @@ class FwsBossController {
             redirect(action: "fwsUserShow", id: id)
         }
     }
+
+
+    //王钧民
+
+    //列表
+    def fwsStationList(Integer max) {
+        def fwsShopId = params.id
+        def fwsShop = FwsShop.get(fwsShopId)
+        def name = fwsShop.name
+        def fwsStationList = FwsStation.findAllByFwsShop(fwsShop)
+        params.max = Math.min(max ?: 10, 100)
+        [fwsStationList: fwsStationList, id: fwsShopId, name: name, fwsStationListInstanceTotal: FwsStation.countByFwsShop(fwsShop)]
+    }
+    //添加
+    def fwsStationCreate() {
+        def fwsShopId = params.id
+        def fwsShop = FwsShop.get(fwsShopId)
+        def name = fwsShop.name
+        [fwsStationInstance: new FwsStation(params),id: fwsShopId,name: name]
+    }
+    //保存
+    def fwsStationSave() {
+        def fwsStationInstance = new FwsStation(params)
+        def fwsShopId = params.fwsShopId
+        fwsStationInstance.fwsShop = FwsShop.get(fwsShopId)
+        if (!fwsStationInstance.save(flush: true)) {
+                render(view: "fwsStationCreate", model: [fwsStationInstance: fwsStationInstance])
+                return
+            }
+
+            flash.message = message(code: 'default.created.message', args: [message(code: 'fwsStation.label', default: 'FwsStation'), fwsStationInstance.id])
+            redirect(action: "fwsStationList", id: fwsShopId)
+        }
+    //查看
+    def fwsStationShow(Long id) {
+        def fwsStationInstance = FwsStation.get(id)
+        def fwsShopId = fwsStationInstance.fwsShopId
+        def fwsShop = FwsShop.get(fwsShopId)
+        def name = fwsShop.name
+        if (!fwsStationInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsStation.label', default: 'FwsStation'), id])
+            redirect(action: "fwsStationList")
+            return
+        }
+
+        [fwsStationInstance: fwsStationInstance,name: name,id: fwsShopId]
+    }
+    //删除
+    def fwsStationDelete(Long id) {
+        def fwsStationInstance = FwsStation.get(id)
+        def fwsShopId = fwsStationInstance.fwsShop.id
+        if (!fwsStationInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsStation.label', default: 'FwsStation'), id])
+            redirect(action: "fwsStationList",id: fwsShopId)
+            return
+        }
+
+        try {
+            fwsStationInstance.delete(flush: true)
+            flash.message = message(code: 'default.deleted.message', args: [message(code: 'fwsStation.label', default: 'FwsStation'), id])
+            redirect(action: "fwsStationList",id: fwsShopId)
+        }
+        catch (DataIntegrityViolationException e) {
+            flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'fwsStation.label', default: 'FwsStation'), id])
+            redirect(action: "fwsStationShow", id: id)
+        }
+    }
+    //编辑
+    def fwsStationEdit(Long id) {
+        def fwsStationInstance = FwsStation.get(id)
+        def fwsShopId = fwsStationInstance.fwsShopId
+        def fwsShop = FwsShop.get(fwsShopId)
+        def fwsStationList = FwsShop.get(fwsShopId).department
+        def name = fwsShop.name
+        if (!fwsStationInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsStation.label', default: 'FwsStation'), id])
+            redirect(action: "fwsStationList")
+            return
+        }
+
+        [fwsStationInstance: fwsStationInstance,name: name,id: fwsShopId,fwsStationList: fwsStationList]
+    }
+    //更新
+    def fwsStationUpdate(Long id, Long version) {
+        def fwsStationInstance = FwsStation.get(id)
+        if (!fwsStationInstance) {
+            flash.message = message(code: 'default.not.found.message', args: [message(code: 'fwsStation.label', default: 'FwsStation'), id])
+            redirect(action: "fwsStationList")
+            return
+        }
+
+        if (version != null) {
+            if (fwsStationInstance.version > version) {
+                fwsStationInstance.errors.rejectValue("version", "default.optimistic.locking.failure",
+                        [message(code: 'fwsStation.label', default: 'FwsStation')] as Object[],
+                        "Another user has updated this FwsStation while you were editing")
+                render(view: "fwsStationEdit", model: [fwsStationInstance: fwsStationInstance])
+                return
+            }
+        }
+
+        fwsStationInstance.properties = params
+
+        if (!fwsStationInstance.save(flush: true)) {
+            render(view: "fwsStationEdit", model: [fwsStationInstance: fwsStationInstance])
+            return
+        }
+
+        flash.message = message(code: 'default.updated.message', args: [message(code: 'fwsStation.label', default: 'FwsStation'), fwsStationInstance.id])
+        redirect(action: "fwsStationShow", id: fwsStationInstance.id)
+    }
+
+
+
+
+
+
+
+
 }
